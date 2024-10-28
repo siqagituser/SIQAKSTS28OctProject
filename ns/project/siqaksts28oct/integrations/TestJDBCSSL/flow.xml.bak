@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="1.0" CLEANUP="false">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE NAME="SSL_JDBC_Test" SERVICE="SSL_JDBC_Test.services:insert_ssl">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/stringData;1;0" TO="/insert_sslInput;2;0/LASTNAME;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/stringData;1;0" TO="/insert_sslInput;2;0/FIRSTNAME;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/stringData;1;0" TO="/insert_sslInput;2;0/ADDRESS;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/stringData;1;0" TO="/insert_sslInput;2;0/CITY;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/bigDecimalData;3.11;0" TO="/insert_sslInput;2;0/PERSONID;3.11;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="OUTPUT">
+  <COMMENT></COMMENT>
+</MAP>
+</INVOKE>
+</FLOW>
