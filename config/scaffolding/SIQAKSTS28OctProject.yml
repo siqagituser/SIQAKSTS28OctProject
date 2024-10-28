@@ -28,3 +28,9 @@ services:
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
+- serviceName: SSL_JDBC_Test.services:get_ssl
+  packages:
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
