@@ -8,7 +8,23 @@ packages:
   gitUsername: siqagituser
   gitBranch: main
 - name: SSL_JDBC_Test
+  version: "1.0"
   gitServerName: siqagituser
   gitUrl: https://github.com/prabhakarsag
   gitUsername: siqagituser
   gitBranch: main
+services:
+- serviceName: project.siqaksts28oct.integrations:TestJDBCSSL
+  packages:
+  - name: SIQAKSTS28OctProject
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+- serviceName: SSL_JDBC_Test.services:insert_ssl
+  packages:
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
