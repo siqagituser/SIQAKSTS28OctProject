@@ -14,28 +14,29 @@ packages:
   gitUsername: siqagituser
   gitBranch: main
 - name: JMS2waySSL
+  version: "1.0"
   gitServerName: siqagituser
   gitUrl: https://github.com/prabhakarsag
   gitUsername: siqagituser
   gitBranch: main
 services:
-- serviceName: project.siqaksts28oct.integrations:TestJDBCSSL
+- serviceName: project.siqaksts28oct.integrations:JMS_SSL
   packages:
   - name: SIQAKSTS28OctProject
     version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
   - name: SSL_JDBC_Test
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
-- serviceName: SSL_JDBC_Test.services:insert_ssl
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: softwareag
+- serviceName: publisher:publisher
   packages:
-  - name: SSL_JDBC_Test
+  - name: JMS2waySSL
     version: "1.0"
-  - name: WmJDBCAdapter
-    version: 10.3.0.0.34
-- serviceName: SSL_JDBC_Test.services:get_ssl
+- serviceName: pub.jms:send
   packages:
-  - name: SSL_JDBC_Test
-    version: "1.0"
-  - name: WmJDBCAdapter
-    version: 10.3.0.0.34
+  - name: WmPublic
+    version: 11.1.0.0.2015
