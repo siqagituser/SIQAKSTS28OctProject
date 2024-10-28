@@ -7,15 +7,19 @@
   <null name="startup_services"/>
   <null name="shutdown_services"/>
   <null name="replication_services"/>
-  <null name="requires"/>
+  <record name="requires" javaclass="com.wm.util.Values">
+    <value name="SSL_JDBC_Test">1.0</value>
+  </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">2</value>
+  <value name="build">3</value>
   <null name="description"/>
   <value name="created_date">28-10-2024 06:28:21 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2024-10-28T06:28:23.97493966Z</value>
+  <value name="lastUpdated">2024-10-28T06:29:21.782143685Z</value>
+  <value name="wmProjectId">fl170b7c9efcbe3d011f4666</value>
+  <value name="creator">prab kamat</value>
 </Values>
