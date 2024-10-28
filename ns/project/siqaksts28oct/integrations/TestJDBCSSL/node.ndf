@@ -80,9 +80,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">prabhakar</value>
-    <value name="createdDate">1730097179667</value>
-    <value name="lastModifiedDate">1730097179667</value>
+    <value name="lastModifiedBy">prabhakar</value>
+    <value name="lastModifiedDate">1730097226652</value>
     <value name="displayName">TestJDBCSSL</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -105,6 +104,26 @@
         <value name="nodePathNew">0</value>
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">1</number>
+      </record>
+      <record name="/1" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">PACKAGES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">SSL_JDBC_Test</value>
+          <value name="groupName">SSL_JDBC_Test;1.0</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="description">SSL_JDBC_Test.services:get_ssl</value>
+          <value name="serviceName">SSL_JDBC_Test.services:get_ssl</value>
+          <value name="displayName">get_ssl</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
+        <number name="ui_step_index" type="Long">2</number>
+        <value name="nodePathNew">1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">2</number>
       </record>
     </record>
   </record>
