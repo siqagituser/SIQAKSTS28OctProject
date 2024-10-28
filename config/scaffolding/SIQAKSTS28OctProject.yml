@@ -13,6 +13,11 @@ packages:
   gitUrl: https://github.com/prabhakarsag
   gitUsername: siqagituser
   gitBranch: main
+- name: JDBC_A
+  gitServerName: siqagituser
+  gitUrl: https://github.com/prabhakarsag
+  gitUsername: siqagituser
+  gitBranch: main
 services:
 - serviceName: project.siqaksts28oct.integrations:TestJDBCSSL
   packages:
