@@ -19,6 +19,11 @@ packages:
   gitUrl: https://github.com/prabhakarsag
   gitUsername: siqagituser
   gitBranch: main
+- name: SIQACloudStreamsTests
+  gitServerName: SIQA_kvv_wm_io
+  gitUrl: https://github.webmethods.io/mjan
+  gitUsername: kvv
+  gitBranch: main
 services:
 - serviceName: project.siqaksts28oct.integrations:JMS_SSL
   packages:
